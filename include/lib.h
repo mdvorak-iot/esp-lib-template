@@ -1,5 +1,6 @@
-#ifndef TODO_H
-#define TODO_H
+#pragma once
+
+#include "sdkconfig.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -14,6 +15,4 @@ void lib_example();
 
 #ifdef __cplusplus
 }
-#endif
-
 #endif
