@@ -5,6 +5,10 @@
 extern "C" {
 #endif
 
+#ifndef LIB_EXAMPLE
+#define LIB_EXAMPLE CONFIG_LIB_EXAMPLE
+#endif
+
 // TODO
 void lib_example();
 

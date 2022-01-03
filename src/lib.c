@@ -3,5 +3,5 @@
 
 void lib_example()
 {
-    printf("example\n");
+    printf("example %d\n", LIB_EXAMPLE);
 }
