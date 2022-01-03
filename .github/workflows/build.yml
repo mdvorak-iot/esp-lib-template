@@ -42,9 +42,9 @@ jobs:
           IDF_TARGET: ${{ matrix.idf_target }}
         working-directory: example
         run: |
-          . ${IDF_PATH}/export.sh
-          echo "LIB_EXAMPLE=${{ matrix.lib_example }}"
           echo "LIB_EXAMPLE=${{ matrix.lib_example }}" >> sdkconfig
+
+          . ${IDF_PATH}/export.sh
           idf.py build
 
   platformio:
