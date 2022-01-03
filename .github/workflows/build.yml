@@ -43,6 +43,7 @@ jobs:
         working-directory: example
         run: |
           . ${IDF_PATH}/export.sh
+          echo "LIB_EXAMPLE=${{ matrix.lib_example }}"
           echo "LIB_EXAMPLE=${{ matrix.lib_example }}" >> sdkconfig
           idf.py build
 
