@@ -12,23 +12,28 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        idf_ver:
+          - v4.1
+          - v4.2
+          - v4.3
+          - v4.4
+        idf_target:
+          - esp32
+          - esp32s2
+          - esp32c3
+          - esp32s3
+    container: espressif/idf:release-${{ matrix.idf_ver }}
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-
-      - name: Setup Python
-        uses: actions/setup-python@v2.3.0
-        with:
-          python-version: 3.9
-
-      - name: Install platformio
-        run: |
-          python -m pip install --upgrade pip
-          pip install --upgrade platformio
-
-      - name: Check
-        run: platformio check -d example
-
+          
       - name: Build
-        run: platformio run -d example
+        env:
+          IDF_TARGET: ${{ matrix.idf_target }}
+        working-directory: example
+        run: |
+          . ${IDF_PATH}/export.sh
+          idf.py build
