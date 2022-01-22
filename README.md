@@ -19,3 +19,8 @@ and include either of the header files
 ```
 
 For full example, see [lib_template_example_main.c](./example/main/lib_template_example_main.c).
+
+## Development
+
+Load `example/CMakeLists.txt` instead of root project. That will load both functional compilable
+example and the library itself.
