@@ -15,7 +15,7 @@ git submodule add https://github.com/mdvorak-iot/esp-lib-template.git components
 and include either of the header files
 
 ```c
-#include <lib.h>
+#include <lib_template.h>
 ```
 
 For full example, see [lib_template_example_main.c](./example/main/lib_template_example_main.c).

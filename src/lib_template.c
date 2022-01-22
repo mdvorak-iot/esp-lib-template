@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "lib_template.h"
 #include <stdio.h>
 
 void lib_example()

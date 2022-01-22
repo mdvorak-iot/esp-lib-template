@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13.4)
 
 idf_component_register(
-        SRCS src/lib.c
+        SRCS src/lib_template.c
         INCLUDE_DIRS include
 )
