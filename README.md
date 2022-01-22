@@ -1,6 +1,6 @@
 # esp-lib-template
 
-![build](https://github.com/mdvorak-iot/esp-lib-template/workflows/build/badge.svg)
+[![build](https://github.com/mdvorak-iot/esp-lib-template/actions/workflows/build.yml/badge.svg)](https://github.com/mdvorak-iot/esp-lib-template/actions/workflows/build.yml)
 
 TODO Description
 
