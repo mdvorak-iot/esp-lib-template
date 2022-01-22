@@ -22,5 +22,21 @@ For full example, see [lib_template_example_main.c](./example/main/lib_template_
 
 ## Development
 
-Load `example/CMakeLists.txt` instead of root project. That will load both functional compilable
-example and the library itself.
+Prepare [ESP-IDF development environment](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#get-started-get-prerequisites)
+.
+
+Configure example application with
+
+```
+cd example/
+idf.py menuconfig
+```
+
+Flash it via (in the example dir)
+
+```
+idf.py -b 921600 build flash monitor
+```
+
+As an alternative, you can use [PlatformIO](https://docs.platformio.org/en/latest/core/installation.html) to build and
+flash the example project.
