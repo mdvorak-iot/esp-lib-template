@@ -37,6 +37,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup Component Manager
+        run: |
+          . ${IDF_PATH}/export.sh
+          pip install idf-component-manager --upgrade
+
       - name: Build
         env:
           IDF_TARGET: ${{ matrix.idf_target }}
