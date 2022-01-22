@@ -1,4 +1,4 @@
-# esp-lib-template
+# lib_template
 
 [![build](https://github.com/mdvorak-iot/esp-lib-template/actions/workflows/build.yml/badge.svg)](https://github.com/mdvorak-iot/esp-lib-template/actions/workflows/build.yml)
 
